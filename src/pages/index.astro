@@ -6,7 +6,7 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>"
     />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>Case Converter</title>
     <meta
@@ -40,7 +40,17 @@
           <span id="line-count">Line Count: 0</span>
         </div>
 
-        <div class="mt-4 space-y-2 space-x-4">
+        <div class="mt-8 flex flex-wrap justify-center space-x-2">
+          <span id="character-count">Character Count: 0</span>
+          <span>|</span>
+          <span id="word-count">Word Count: 0</span>
+          <span>|</span>
+          <span id="sentence-count">Sentence Count: 0</span>
+          <span>|</span>
+          <span id="line-count">Line Count: 0</span>
+        </div>
+
+        <div class="mt-4 flex flex-wrap justify-center gap-2">
           <button
             id="sentence-case-button"
             class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
@@ -78,7 +88,7 @@
           >
         </div>
 
-        <div class="mt-8 space-y-2 space-x-4">
+        <div class="mt-8 flex flex-wrap justify-center gap-2">
           <button
             id="download-button"
             class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
@@ -94,16 +104,13 @@
             class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
             >Clear</button
           >
-          <button
+          <a
+            id="github-button"
+            href="https://github.com/DennisKidman/case-convert"
             class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            target="_blank"
+            rel="noopener noreferrer">GitHub</a
           >
-            <a
-              id="github-button"
-              href="https://github.com/DennisKidman/case-convert"
-              target="_blank"
-              rel="noopener noreferrer">GitHub</a
-            >
-          </button>
         </div>
       </div>
     </div>
