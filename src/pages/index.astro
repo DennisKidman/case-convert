@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Case Converter</title>
+    <meta
+      name="description"
+      content="The best and easy to use Case Converter!"
+    />
+  </head>
+  <body style="margin: 0; padding: 0; height: 100%; overflow: hidden;">
+    <div
+      class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-200 to-blue-300"
+      style="height: 100%;"
+    >
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-black mb-4">Quick Case Converter</h1>
+        <p class="text-xl text-black">Easy fix for caps mishaps!</p>
+
+        <div class="mt-8">
+          <textarea
+            id="text-input"
+            class="w-full h-40 px-4 py-2 text-lg rounded-lg shadow-lg focus:outline-none overflow-y-auto"
+            placeholder="Enter your text here..."></textarea>
+        </div>
+
+        <div class="mt-8 flex items-center space-x-2">
+          <span id="character-count">Character Count: 0</span>
+          <span>|</span>
+          <span id="word-count">Word Count: 0</span>
+          <span>|</span>
+          <span id="sentence-count">Sentence Count: 0</span>
+          <span>|</span>
+          <span id="line-count">Line Count: 0</span>
+        </div>
+
+        <div class="mt-4 space-y-2 space-x-4">
+          <button
+            id="sentence-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Sentence case</button
+          >
+          <button
+            id="lower-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >lower case</button
+          >
+          <button
+            id="upper-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >UPPER CASE</button
+          >
+          <button
+            id="capitalized-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Capitalized Case</button
+          >
+          <button
+            id="alternating-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >aLtErNaTiNg cAsE</button
+          >
+          <button
+            id="title-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Title Case</button
+          >
+          <button
+            id="inverse-case-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >InVeRsE CaSe</button
+          >
+        </div>
+
+        <div class="mt-8 space-y-2 space-x-4">
+          <button
+            id="download-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Download</button
+          >
+          <button
+            id="copy-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Copy to Clipboard</button
+          >
+          <button
+            id="clear-button"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+            >Clear</button
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      import {
+        addCaseConversionEventListeners,
+        addTextInputEventListeners,
+      } from "../scripts/eventHandlers";
+
+      // Initialize event listeners
+      addCaseConversionEventListeners();
+      addTextInputEventListeners();
+    </script>
+  </body>
+</html>
