@@ -46,7 +46,7 @@ Contributions to Case Converter are welcome! Feel free to report any issues or s
 
 ## License
 
-Case Converter is released under the [MIT License](LICENSE.md).
+Case Converter is released under the [MIT License](https://github.com/DennisKidman/case-convert/blob/main/LICENSE).
 
 ## Acknowledgments
 
