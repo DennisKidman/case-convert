@@ -50,4 +50,4 @@ Case Converter is released under the [MIT License](https://github.com/DennisKidm
 
 ## Acknowledgments
 
-Special thanks to the Astro.js and Tailwind CSS communities for providing the tools to build this application.
+Special thanks to the Astro and Tailwind CSS communities for providing the tools to build this application.
