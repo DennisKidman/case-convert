@@ -17,20 +17,21 @@ You can try out Case Converter here: [Live Demo](#)
 
 To run Case Converter locally, follow these steps:
 
-\```bash
-git clone https://github.com/DennisKidman/case-convert.git\
+```
+git clone https://github.com/DennisKidman/case-convert.git
 cd case-convert
 npm install
 npm run dev
-\```
+```
+
 
 ## Building for Production
 
 To build the application for production use:
 
-\```bash
+```
 npm run build
-\```
+```
 
 ## How to Use
 
@@ -45,7 +46,7 @@ Contributions to Case Converter are welcome! Feel free to report any issues or s
 
 ## License
 
-Case Converter is released under the [MIT License].
+Case Converter is released under the [MIT License](LICENSE.md).
 
 ## Acknowledgments
 
