@@ -40,10 +40,6 @@ npm run build
 3. Click on the button corresponding to the case conversion you need.
 4. Use the "Download" or "Copy to Clipboard" buttons to export your converted text.
 
-## Contributing
-
-Contributions to Case Converter are welcome! Feel free to report any issues or submit pull requests.
-
 ## License
 
 Case Converter is released under the [MIT License](https://github.com/DennisKidman/case-convert/blob/main/LICENSE).
